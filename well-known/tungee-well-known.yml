@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of https://www.tungee.com and https://user.tungee.com
+found: none
+notes: No real /.well-known/ documents are published. www.tungee.com 301-redirects
+  every /.well-known/ path (and /llms.txt) to its /404/ page; user.tungee.com
+  answers /.well-known/openid-configuration with HTTP 200 but the body is the
+  login SPA HTML shell, not an OIDC discovery document. Candidate API hosts
+  (api., open., docs., developer., dev., openapi., status., trust.tungee.com)
+  do not resolve in DNS.
+hosts:
+- host: https://www.tungee.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    note: 301 to /404/
+  - path: /.well-known/openid-configuration
+    status: 404
+    note: 301 to /404/
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    note: 301 to /404/
+  - path: /.well-known/api-catalog
+    status: 404
+    note: 301 to /404/
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    note: 301 to /404/
+  - path: /llms.txt
+    status: 404
+    note: 301 to /404/
+- host: https://user.tungee.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: SPA fallback HTML, not a valid OIDC discovery document; not saved
+  - path: /.well-known/security.txt
+    status: 404

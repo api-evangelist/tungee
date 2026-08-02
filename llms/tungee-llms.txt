@@ -1,0 +1,36 @@
+# Tungee
+
+> Tungee (Guangzhou Tungee Technology Co., Ltd., 探迹科技) is a Chinese AI sales-intelligence company backed by Qiming Venture Partners. Its Tungee AI Sales Cloud covers the full B2B sales cycle -- AI prospecting over a 300M+ company knowledge graph, inbound capture, outreach (call center, SMS, email), and an AI CRM -- plus a Sales GPT agent line, a mobile app, and a DingTalk edition. The group also operates Futern, an international B2B leads product. Tungee publishes no public developer portal or API documentation.
+
+## Company
+
+- [Website](https://www.tungee.com): Tungee AI Sales Cloud marketing site (Chinese)
+- [About Tungee](https://www.tungee.com/about/intro/): company introduction, technology, honors, contact
+- [Customer stories](https://www.tungee.com/about/customer-story/): case studies
+- [News](https://www.tungee.com/about/media-report/1/): media reports and company news
+- [Sales resources](https://www.tungee.com/support/sales-share): sales content hub
+
+## Products
+
+- [Tungee AI Prospecting](https://www.tungee.com/product/sales): lead discovery over the company knowledge graph
+- [Tungee AI Inbound](https://www.tungee.com/product/inbound): inbound capture, smart customer service, marketing forms
+- [Tungee AI Engage](https://www.tungee.com/product/engage): call center, SMS and email marketing, insights
+- [Tungee AI CRM](https://www.tungee.com/product/crm): customer and sales management, e-contract, e-invoice
+- [Tungee AI Agent (Sales GPT)](https://www.tungee.com/product/sales-gpt): prospecting agent, smart filtering, AI opportunities
+- [Tungee App](https://www.tungee.com/product/app): mobile app
+- [DingTalk edition](https://www.tungee.com/product/dingtalk/): Tungee inside DingTalk
+
+## Account
+
+- [Sign up](https://www.tungee.com/register/)
+- [Log in](https://user.tungee.com)
+- [Terms of service](https://www.tungee.com/services-agreement/)
+- [Privacy policy](https://www.tungee.com/privacy-policy/)
+
+## Catalog artifacts
+
+- [APIs.json profile](https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/apis.yml): API Evangelist network profile
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/security/tungee-domain-security.yml): TLS/DNS posture
+- [Well-known probe index](https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/well-known/tungee-well-known.yml): /.well-known/ probe results
+
+<!-- generated: 2026-07-21 | method: generated | source: apis.yml + www.tungee.com (no provider llms.txt published) -->

@@ -1,19 +1,47 @@
 aid: tungee
-name: tungee
-description: tungee is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Tungee
+description: Tungee (Guangzhou Tungee Technology Co., Ltd., 探迹科技) is a Chinese AI
+  sales-intelligence company backed by Qiming Venture Partners. Its Tungee AI Sales
+  Cloud covers the full B2B sales cycle -- AI prospecting over a 300M+ company knowledge
+  graph, inbound capture, outreach via call center, SMS, and email, and an AI CRM --
+  plus a Sales GPT agent line, a mobile app, and a DingTalk edition. The group also
+  operates Futern, an international B2B leads product, and reports 50,000+ customers.
+  Tungee publishes no public developer portal or API documentation.
 url: https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.tungee.com/warehouse/logo/T.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Sales Intelligence
+- CRM
+- Lead Generation
+- AI Agents
+- B2B Data
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +50,20 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://tungee.com
+  url: https://www.tungee.com
+- type: Blog
+  url: https://www.tungee.com/about/media-report/1/
+- type: Support
+  url: https://www.tungee.com/about/intro/#contact
+- type: SignUp
+  url: https://www.tungee.com/register/
+- type: Login
+  url: https://user.tungee.com
+- type: TermsOfService
+  url: https://www.tungee.com/services-agreement/
+- type: PrivacyPolicy
+  url: https://www.tungee.com/privacy-policy/
+- type: DomainSecurity
+  url: security/tungee-domain-security.yml
+- type: LLMsTxt
+  url: llms/tungee-llms.txt
