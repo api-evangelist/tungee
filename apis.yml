@@ -27,13 +27,32 @@ x-backed-by:
 x-tier: stub
 x-tier-reason: portfolio-lead
 x-enrichment:
-  date: '2026-07-21'
+  date: '2026-08-14'
   status: minimal
-  artifacts_added: 3
+  artifacts_added: 2
   pass: local-v1
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    Tungee markets an open API on its CRM integration page ("API接口灵活调用 --
+    提供灵活开放的数据和功能调用接口，0代码对接") but publishes no reference for it
+    anywhere: no developer host resolves in DNS (api./open./openapi./docs./developer.
+    tungee.com are all NXDOMAIN) and the only route to it is an authenticated
+    tenant at user.tungee.com.
+  evidence:
+  - url: https://www.tungee.com/solution/integrate/
+    status: 200
+  - url: https://www.tungee.com/sitemap-0.xml
+    status: 200
+  - url: https://www.tungee.com/.well-known/api-catalog
+    status: 404
+  - url: https://futern.com/openapi.json
+    status: 404
+  checked: '2026-08-14'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-14'
 tags:
 - Company
 - Sales Intelligence
@@ -67,3 +86,7 @@ common:
   url: security/tungee-domain-security.yml
 - type: LLMsTxt
   url: llms/tungee-llms.txt
+- type: Plans
+  url: plans/tungee-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/tungee-rate-limits.yml
