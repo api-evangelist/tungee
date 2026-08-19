@@ -1,0 +1,46 @@
+generated: '2026-08-14'
+method: searched
+source: https://www.tungee.com/sitemap-0.xml (HTTP 200, 1,902 URLs) +
+  https://www.tungee.com/register/ (HTTP 200) + https://www.tungee.com/solution/integrate/
+  (HTTP 200)
+name: Tungee Plans & Pricing
+plan_count: 0
+plans: []
+pricing_model: contact-sales
+public_pricing: false
+note: >-
+  Tungee publishes no pricing page and no plan tiers. Its own sitemap
+  (https://www.tungee.com/sitemap-0.xml, 1,902 URLs fetched 2026-08-14) contains
+  no pricing, plans, packages or 价格 page of any kind — the only top-level
+  sections are product pages (/product/sales, /product/inbound, /product/engage,
+  /product/crm, /product/sales-gpt, /product/app, /product/dingtalk,
+  /product/wecom), solution pages (/solution/*), a partner program (/partner),
+  a resource library (/resource-download) and the about/support content hub.
+  The commercial motion is Chinese enterprise contact-sales: every call to
+  action routes to a free-trial registration form (https://www.tungee.com/register/)
+  or the sales line published on /about/intro/ (4000880525 / 400-022-8662).
+  No seat price, credit price, quota or overage rate is published anywhere on
+  the public site.
+evidence:
+- url: https://www.tungee.com/sitemap-0.xml
+  status: 200
+- url: https://www.tungee.com/register/
+  status: 200
+- url: https://www.tungee.com/product/saas
+  status: 200
+api_pricing:
+  published: false
+  note: >-
+    No API metering, quota, credit or usage-based pricing is published. The CRM
+    integration page (https://www.tungee.com/solution/integrate/) markets
+    "API接口灵活调用 — 提供灵活开放的数据和功能调用接口，0代码对接，即买即用"
+    ("flexible open data and function-call interfaces, zero-code integration,
+    buy and use immediately"), which implies the API is sold as part of a CRM
+    subscription, but no commercial terms, rate card or entitlement table is
+    attached to it anywhere public.
+sibling_brand_note: >-
+  Futern (https://www.futern.com/, Tungee's international AI sales agent brand)
+  does publish a /pricing page (HTTP 200), but the tiers are rendered
+  client-side — the served HTML carries the heading "Unlock Growth with Our
+  Flexible Plans" and no prices, quotas or currency. Nothing is recorded here
+  from it; it is Futern's surface, not tungee.com's.

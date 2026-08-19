@@ -1,13 +1,23 @@
-generated: '2026-07-21'
+generated: '2026-08-14'
 method: searched
-source: live probes of https://www.tungee.com and https://user.tungee.com
+source: live probes of every Tungee-group host discoverable in DNS and in search
+  (www.tungee.com, user.tungee.com, m.tungee.com, intl.tungee.com,
+  crm-portal.tungee.com, futern.com, futern.ai) on 2026-08-14
 found: none
-notes: No real /.well-known/ documents are published. www.tungee.com 301-redirects
-  every /.well-known/ path (and /llms.txt) to its /404/ page; user.tungee.com
-  answers /.well-known/openid-configuration with HTTP 200 but the body is the
-  login SPA HTML shell, not an OIDC discovery document. Candidate API hosts
-  (api., open., docs., developer., dev., openapi., status., trust.tungee.com)
-  do not resolve in DNS.
+notes: >-
+  No real /.well-known/ document is published on any Tungee-group host. Round 2
+  widened the probe to the mobile, international and sibling-brand hosts and
+  still found nothing. www.tungee.com 301-redirects every /.well-known/ path (and
+  /llms.txt) to its /404/ page. user.tungee.com and m.tungee.com answer 200 for
+  every /.well-known/* path with the same SPA HTML shell (m.tungee.com returns an
+  identical 354,480-byte HTML body for /llms.txt, /swagger.json,
+  /.well-known/agent-card.json and /.well-known/security.txt alike) — a catch-all
+  200, not a document, so nothing is saved and no WellKnown or AgentCard pointer
+  is emitted. futern.com returns a real JSON 404 body ({"error":"Not Found"}) for
+  the well-known paths, which is a clean negative. Candidate API hosts (api.,
+  open., openapi., docs., developer., dev., gateway., apis., openplatform.,
+  status., trust.tungee.com) do not resolve in DNS. NO POINTER IS WIRED FOR THIS
+  FILE — it records an absence.
 hosts:
 - host: https://www.tungee.com
   documents:
@@ -36,3 +46,75 @@ hosts:
     note: SPA fallback HTML, not a valid OIDC discovery document; not saved
   - path: /.well-known/security.txt
     status: 404
+- host: https://m.tungee.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 200
+    note: SPA catch-all — 354,480-byte text/html body, rejected (not an AgentCard)
+  - path: /.well-known/agent.json
+    status: 200
+    note: SPA catch-all HTML, rejected
+  - path: /.well-known/security.txt
+    status: 200
+    note: SPA catch-all HTML, rejected
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: SPA catch-all HTML, rejected
+  - path: /openapi.json
+    status: 200
+    note: SPA catch-all HTML (294,637 bytes), rejected
+  - path: /swagger.json
+    status: 200
+    note: SPA catch-all HTML, rejected
+  - path: /llms.txt
+    status: 200
+    note: SPA catch-all HTML, rejected
+  - path: /robots.txt
+    status: 200
+    note: Real robots.txt; no API or docs paths named
+- host: https://intl.tungee.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 0
+    note: TCP connect refused/timed out on 443 and 80 (47.99.141.230) from the probe
+      network; host resolves but does not answer
+  - path: /.well-known/security.txt
+    status: 0
+    note: same — no answer
+- host: https://crm-portal.tungee.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 0
+    note: NXDOMAIN as of 2026-08-14; the host appears in search results but no
+      longer resolves
+- host: https://futern.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+    note: 301 to www.futern.com, which answers {"error":"Not Found"} as JSON
+  - path: /.well-known/agent.json
+    status: 404
+    note: JSON {"error":"Not Found"}
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /openapi.json
+    status: 404
+    note: JSON {"error":"Not Found"}
+  - path: /swagger.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+    note: Real robots.txt; disallows /api/ and /fe-api/ (the app's internal
+      endpoints), publishes no developer surface
+- host: https://futern.ai
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 502
+    note: Origin returns 502 for every path; the brand site is served from
+      futern.com
+  - path: /openapi.json
+    status: 502

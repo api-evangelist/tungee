@@ -1,6 +1,6 @@
 # Tungee
 
-> Tungee (Guangzhou Tungee Technology Co., Ltd., 探迹科技) is a Chinese AI sales-intelligence company backed by Qiming Venture Partners. Its Tungee AI Sales Cloud covers the full B2B sales cycle -- AI prospecting over a 300M+ company knowledge graph, inbound capture, outreach (call center, SMS, email), and an AI CRM -- plus a Sales GPT agent line, a mobile app, and a DingTalk edition. The group also operates Futern, an international B2B leads product. Tungee publishes no public developer portal or API documentation.
+> Tungee (Guangzhou Tungee Technology Co., Ltd., 探迹科技) is a Chinese AI sales-intelligence company backed by Qiming Venture Partners. Its Tungee AI Sales Cloud covers the full B2B sales cycle -- AI prospecting over a 300M+ company knowledge graph, inbound capture, outreach (call center, SMS, email), and an AI CRM -- plus a Sales GPT agent line, a mobile app, and DingTalk and WeCom editions. The group also operates Futern, its international AI sales agent brand. Tungee markets an "API接口灵活调用" (flexible open data and function-call interface) on its CRM integration page, but publishes no developer portal, no API reference and no machine-readable specification.
 
 ## Company
 
@@ -8,7 +8,11 @@
 - [About Tungee](https://www.tungee.com/about/intro/): company introduction, technology, honors, contact
 - [Customer stories](https://www.tungee.com/about/customer-story/): case studies
 - [News](https://www.tungee.com/about/media-report/1/): media reports and company news
+- [Careers](https://www.tungee.com/about/join-us/): hiring
+- [Partner program](https://www.tungee.com/partner): reseller and partner recruitment
 - [Sales resources](https://www.tungee.com/support/sales-share): sales content hub
+- [Resource downloads](https://www.tungee.com/resource-download): whitepapers and guides
+- [Mobile site](https://m.tungee.com): mobile edition of the marketing site
 
 ## Products
 
@@ -17,8 +21,24 @@
 - [Tungee AI Engage](https://www.tungee.com/product/engage): call center, SMS and email marketing, insights
 - [Tungee AI CRM](https://www.tungee.com/product/crm): customer and sales management, e-contract, e-invoice
 - [Tungee AI Agent (Sales GPT)](https://www.tungee.com/product/sales-gpt): prospecting agent, smart filtering, AI opportunities
+- [Tungee Sales Cloud (SaaS)](https://www.tungee.com/product/saas): the combined platform
 - [Tungee App](https://www.tungee.com/product/app): mobile app
 - [DingTalk edition](https://www.tungee.com/product/dingtalk/): Tungee inside DingTalk
+- [WeCom edition](https://www.tungee.com/product/wecom): Tungee inside WeCom (企业微信)
+
+## Solutions
+
+- [System integration](https://www.tungee.com/solution/integrate): the only page that mentions an API -- "提供灵活开放的数据和功能调用接口，0代码对接，即买即用"
+- [Customer discovery](https://www.tungee.com/solution/discover)
+- [Lead grading](https://www.tungee.com/solution/grade)
+- [Scaling sales](https://www.tungee.com/solution/scale)
+- [Finance industry](https://www.tungee.com/solution/finance)
+- [Industrial parks](https://www.tungee.com/solution/garden)
+
+## International
+
+- [Futern](https://www.futern.com): the group's international AI sales agent brand (English)
+- [Futern on GitHub](https://github.com/Futern): organization exists since 2024-12-04 with zero public repositories
 
 ## Account
 
@@ -27,10 +47,18 @@
 - [Terms of service](https://www.tungee.com/services-agreement/)
 - [Privacy policy](https://www.tungee.com/privacy-policy/)
 
+## Developer surface
+
+- None published. No developer portal, API reference, OpenAPI/AsyncAPI/GraphQL specification, SDK, CLI, MCP server, agent card or status page was found on any Tungee-group host on 2026-08-14.
+- No API host resolves in DNS: api., open., openapi., docs., developer., dev., gateway., apis., openplatform., status. and trust.tungee.com are all NXDOMAIN.
+- The API Tungee markets is sold to CRM customers; its contract is reachable only behind an authenticated tenant at https://user.tungee.com.
+
 ## Catalog artifacts
 
 - [APIs.json profile](https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/apis.yml): API Evangelist network profile
 - [Domain security probe](https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/security/tungee-domain-security.yml): TLS/DNS posture
-- [Well-known probe index](https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/well-known/tungee-well-known.yml): /.well-known/ probe results
+- [Well-known probe index](https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/well-known/tungee-well-known.yml): /.well-known/ probe results across seven hosts
+- [Plans and pricing](https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/plans/tungee-plans-pricing.yml): no public pricing (contact-sales)
+- [Rate limits](https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/rate-limits/tungee-rate-limits.yml): none documented or observable
 
-<!-- generated: 2026-07-21 | method: generated | source: apis.yml + www.tungee.com (no provider llms.txt published) -->
+<!-- generated: 2026-08-14 | method: generated | source: apis.yml + www.tungee.com sitemap-0.xml + live probes (no provider llms.txt published) -->

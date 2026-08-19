@@ -1,0 +1,44 @@
+generated: '2026-08-14'
+method: searched
+source: https://www.tungee.com/sitemap-0.xml (HTTP 200) + live response headers
+  observed on https://www.tungee.com/ (HTTP 200) and https://user.tungee.com/
+  (HTTP 200) on 2026-08-14
+name: Tungee Rate Limits
+docs: null
+docs_note: >-
+  Tungee publishes no developer documentation at all, so no rate limits are
+  documented. There is no developer portal, no API reference and no API host in
+  DNS (api., open., openapi., docs., developer., dev., gateway., apis.tungee.com
+  are all NXDOMAIN), so there is also no unauthenticated API response to read a
+  limit off.
+limit_count: 0
+limits: []
+response_headers:
+- name: X-RateLimit-Limit
+  observed: false
+- name: X-RateLimit-Remaining
+  observed: false
+- name: RateLimit
+  observed: false
+- name: Retry-After
+  observed: false
+exhaustion_status: null
+exhaustion_status_note: Unknown. No API surface was reachable to induce or observe
+  a 429.
+hosts_probed:
+- host: www.tungee.com
+  status: 200
+  note: >-
+    Marketing site behind Alibaba Cloud WAF (server nginx/1.10.3, acw_tc cookie).
+    No rate-limit headers of any family on the response.
+- host: user.tungee.com
+  status: 200
+  note: Login SPA behind the same WAF. No rate-limit headers.
+- host: m.tungee.com
+  status: 200
+  note: Mobile marketing site. No rate-limit headers.
+caveat: >-
+  An honest zero, not an absence of effort: the API Tungee markets on
+  https://www.tungee.com/solution/integrate/ is sold to CRM customers and its
+  contract is never published, so any limits it enforces are invisible to a
+  prospective integrator.
