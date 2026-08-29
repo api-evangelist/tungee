@@ -8,6 +8,17 @@ description: Tungee (Guangzhou Tungee Technology Co., Ltd., 探迹科技) is a C
   operates Futern, an international B2B leads product, and reports 50,000+ customers.
   Tungee publishes no public developer portal or API documentation.
 url: https://raw.githubusercontent.com/api-evangelist/tungee/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
